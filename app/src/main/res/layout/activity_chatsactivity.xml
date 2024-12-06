@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity"
+    android:background="@drawable/backgroundimg">
+
+      <ImageButton
+          android:id="@+id/back_chat"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="20dp"
+          android:layout_marginTop="27dp"
+          android:background="?android:attr/selectableItemBackgroundBorderless"
+          app:layout_constraintStart_toStartOf="parent"
+          app:tint="@color/My_Primary"
+          app:layout_constraintTop_toTopOf="parent"
+          app:srcCompat="@drawable/baseline_keyboard_backspace_24" />
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@color/My_Primary"
+        android:background="@drawable/editext_rounded_corner"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/back_chat"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Recyclerview_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_chat" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:fitsSystemWindows="true"
+        android:background="@color/My_Primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recyclerview_chat">
+
+        <EditText
+            android:id="@+id/text_edit_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Write here "
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            tools:layout_editor_absoluteX="13dp"
+            tools:layout_editor_absoluteY="505dp"
+            android:background="@drawable/editext_rounded_corner"/>
+        <ImageButton
+            android:id="@+id/message_send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_send_24"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

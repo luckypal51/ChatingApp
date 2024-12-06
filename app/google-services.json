@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "506030930459",
+    "project_id": "messengerapp-fcfcf",
+    "storage_bucket": "messengerapp-fcfcf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506030930459:android:96ebdced82772b6d2e16be",
+        "android_client_info": {
+          "package_name": "com.example.messengerapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_UdT3d8IDrHhlbsXRHvVl7OIWlV7QYYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
